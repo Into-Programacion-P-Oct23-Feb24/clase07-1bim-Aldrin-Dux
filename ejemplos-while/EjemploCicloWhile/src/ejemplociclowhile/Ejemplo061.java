@@ -26,6 +26,8 @@ public class Ejemplo061 {
         double suma_total = 0;
         double calificacion;
         boolean bandera = true;
+        double promedio;
+        int n=0;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
@@ -33,12 +35,12 @@ public class Ejemplo061 {
         while(bandera==true){
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
+            n=n+1;
 
             if (calificacion > 20) {
                 calificacion = 20;
             }
             suma_total = suma_total + calificacion;
-
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor -1 para salir del ciclo");
             int temporal = entrada.nextInt();
@@ -47,8 +49,9 @@ public class Ejemplo061 {
                 bandera = false;
             }
         }
+        promedio=suma_total/n;
 
-        System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
+        System.out.printf("El promedio es %.1f\nSumatotal: %.1f", promedio,suma_total);
 
     }
 }
