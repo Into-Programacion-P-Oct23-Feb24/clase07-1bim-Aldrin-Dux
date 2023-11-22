@@ -35,6 +35,16 @@ public class Ejemplo03 {
         }
 
         System.out.printf("La suma final es %d\n", suma);
+        /*
+        al incio se esta declarando 4 variables, dos para definir el rango que 
+        se usara en el while, 1 para guardar el valor ingresado por pantalla,1 
+        para acumular la suma de los valores ingresados en el rango definido por
+        las dos variables usadas para esto exactamente
+        el codigo hace un rango del 1 al 5 donde por cada uno se ira sumando un
+        numero que se ingresara por pantalla, en una variable se esta sumando
+        el valor de cada numero ingresado, al ginal se presenta la suma total
+        de los cinco valores ingresados
+        */
 
     }
 }
